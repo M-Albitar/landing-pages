@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: ar-font;
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+body {
+    font-family: ar-font, Arial, Helvetica, sans-serif;
+}
+
+/* بداية رأس الصفحة */
+
+header video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header .overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+header .overlay .brand {
+    padding-top: 40px;
+}
+
+header .header-text {
+    padding-top: 190px;
+}
+
+header .header-text h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 46px;
+    color: #555555;
+}
+
+header .header-text p {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 50px;
+    color: #5d5d5d;
+}
+
+header .header-button a.btn {
+    color: #ffffff;
+    padding: 22px 55px;
+    background-color: #7936b2;
+    margin-left: 15px;
+}
+
+header .header-button a.btn:last-child {
+    background-color: transparent;
+    color: #5d5d5d;
+}
+
+header .product {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+header .product .product-image img {
+    width: 100%;
+
+}
+
+
+header .product-price img {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+header .product-price p {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+}
+
+header .product-price span {
+    display: block;
+}
+
+/* نهاية راس الصفحة */
+
+/* ============================================================================================ */
+
+/* بداية قسم التعريف بالمنتج */
+section.features {
+    background-color: #ffffff;
+    padding: 70px 0;
+}
+
+section.features .features-title h2 {
+    font-size: 36px;
+    color: #555;
+    line-height: 32px;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+section.features .features-title h2::after {
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: #743e9a;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+section.features .media-feature .d-flex {
+    padding: 70px 0;
+    border-bottom: 3px solid #eeeeee;
+}
+
+section.features .media-feature .d-flex:nth-child(even) {
+    direction: ltr;
+}
+
+section.features .media-feature .d-flex:nth-child(even) h4 {
+    border-right: none;
+    border-left: 2px solid #6a3093;
+}
+
+section.features .media-feature .d-flex:nth-child(even) img {
+    border-left: 0;
+    padding-right: 50px;
+}
+
+section.features .media-feature .d-flex img {
+    padding-left: 50px;
+}
+
+section.features .media-feature .d-flex h4 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6a3093;
+    padding: 0 25px;
+    margin-bottom: 50px;
+    border-right: 2px solid #6a3093;
+}
+
+section.features .media-feature .d-flex p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #555555;
+}
+
+/* نهاية قسم التعريف بالمنتج */
+
+/* ============================================================================================ */
+
+/*بداية قسم خطط الاسعار  */
+
+section.prices {
+    background-color: #f7f7f7;
+    padding: 50px 0 60px;
+}
+
+section.prices .price-text h2 {
+    font-size: 30px;
+    color: #555555;
+}
+
+section.prices .plan-card {
+    background-color: #fff;
+    border: 2px solid #ededed;
+    padding: 15px 0;
+    margin-top: 100px;
+    color: #acacac;
+}
+
+section.prices .plan-card span.title {
+    font-size: 18px;
+    color: #a044ff;
+}
+
+section.prices .plan-card h5 {
+    font-size: 48px;
+    margin: 30px auto;
+}
+
+section.prices .plan-card h5 span {
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+section.prices .plan-card ul {
+    padding-right: 0;
+}
+
+section.prices .plan-card ul li {
+    font-size: 15px;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+section.prices .col-lg-3:nth-child(3) .plan-card {
+    padding-top: 70px;
+    margin-top: 70px;
+}
+
+section.prices .col-lg-3:nth-child(3) .plan-card a.btn {
+    background-color: #7233a2;
+    color: #ffffff;
+}
+
+section.prices .plan-card a.btn {
+    border: 2px solid #7233a2;
+    background-color: #fff;
+    color: #7233a2;
+    padding: 10px 40px;
+    border-radius: 0;
+    transition: 0.5s all ease;
+}
+
+section.prices .plan-card a.btn:hover {
+    background-color: #7233a2;
+    color: #ffffff;
+}
+
+/* نهاية قسم خطط الاسعار */
+
+/* ============================================================================================ */
+
+/* بداية قسم الاسئلة الاكثر شيوعا */
+
+section.faq {
+    background-color: #fff;
+    padding: 55px 0;
+}
+
+section.faq .faq-title h2 {
+    font-size: 30px;
+    color: #555;
+    margin-bottom: 55px;
+}
+
+section.faq .accordion .accordion-item button {
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+}
+
+section.faq .accordion .accordion-item .accordion-button:not(.collapsed) {
+    background-color: #fff;
+}
+
+section.faq .accordion .accordion-item .accordion-button:focus {
+    box-shadow: 0 0 0;
+    border: 0;
+}
+
+section.faq .accordion .accordion-item .accordion-body {
+    font-size: 15px;
+    color: #c9c9c9;
+    line-height: 24px;
+}
+
+/* نهاية قسم الاسئلة الاكثر شيوعا */
+
+/* ============================================================================================ */
+
+/* بداية قسم الفيديو */
+
+section.video {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+section.video video {
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+}
+
+section.video .overlay {
+    background-color: rgba(130, 77, 178, 0.9);
+    min-height: 100%;
+    inset: 0;
+    position: absolute;
+}
+
+section.video .overlay button {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    font-size: 30px;
+    transform: translate(50%, 50%);
+}
+
+section.video .overlay button i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto 45px;
+
+}
+
+/* نهاية قسم الفيديو */
+
+/* ============================================================================================ */
+
+/* بداية قسم التواصل */
+
+section.contact {
+    padding: 60px 0 40px;
+    background-color: #131313;
+}
+
+section.contact h4 {
+    font-size: 18px;
+    color: #758594;
+    line-height: 50px;
+}
+
+section.contact form input,
+section.contact form textarea {
+    border: none;
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+    border-radius: 0;
+    background-color: #242424;
+    color: #aeadad;
+}
+
+section.contact form button {
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #a044ff;
+    color: #fff;
+    border: none;
+}
+
+section.contact form i {
+    margin-right: 15px;
+}
+
+section.contact form .invalid-feedback {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+section.contact .blog a.blog-link {
+    text-decoration: none;
+}
+
+section.contact .blog .d-flex {
+    margin-bottom: 25px;
+}
+
+section.contact .blog h5 {
+    font-size: 18px;
+    color: #aeadad;
+    margin-bottom: 15px;
+}
+
+section.contact .blog p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #737373;
+}
+
+footer {
+    background-color: #1d1d1d;
+    padding: 25px 0;
+}
+
+footer .list-inline .list-inline-item a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    display: block;
+    color: #1d1d1d;
+    background-color: #758594;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s all ease;
+}
+
+footer .list-inline .list-inline-item a:hover {
+    background-color: #1479ec;
+}
+
+footer .copyright p {
+    font-size: 15px;
+    color: #919191;
+    text-align: left;
+}
+
+
+
+/* نهاية قسم التواصل */
+
+/* ============================================================================================ */
+
+
+@media (max-width:767px) {
+    header .product {
+        margin-top: 85px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:570){
+    section.features .media-feature .d-flex {
+        padding: 70px 3px;
+        
+    }
+    header .header-text {
+        padding-top: 90px;
+      }
+}
